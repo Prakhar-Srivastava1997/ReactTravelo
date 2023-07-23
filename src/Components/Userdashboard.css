@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.userdashboard-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(245, 238, 238);
+    overflow: hidden;
+}
+.user-nav-bar{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    background-color: rgb(245, 238, 238)
+}
+.user-logo-section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+.user-login-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap:1rem;
+}
+.user-logo-section img{
+    height: 100%;
+    background: transparent;
+}
+.logout-button{
+    background-color:rgb(38, 111, 212);
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin-right: 2rem;
+}
+.user-search-destination{
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+}
+
+.user-search-destination h1{
+    color: white;
+    text-align: center;
+    z-index: 99;
+    position: absolute;
+    left: 10%;
+    top:30%;
+    font-size: 2rem;
+}
+.user-search-section{
+    width:80%;
+    height: 10rem;
+    background-color: rgb(207, 203, 203);
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+.user-input-fields{
+    width: 95%;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: .5rem;
+}
+.user-search-section input{
+    height: 3rem;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding-left: 1rem;
+}
+.user-search-btn{
+    position: absolute;
+    top:85%;
+    background-color: rgb(10, 129, 203);
+    font-size: 1.2rem;
+    padding: .5rem .5rem;
+    border-radius: 20px;
+    border: none;
+    color: aliceblue;
+}
+.user-location-icon{
+    margin-left: -8%;
+    margin-top: 2%;
+}
+.footer-container{
+    width: 100%;
+    height:40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+.footer-section{
+    width: 90%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    z-index: 99;
+    min-height: 25rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+.footer-s1{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: .5rem;
+}
+.col-1{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    color: white;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+}
+.col-2{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    color: white; 
+}
+.col-2 a{
+    color: white;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.col-2 a:hover{
+    text-decoration: underline;
+}
+.col-3{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    color: white;
+}
+.footer-s2{
+    width: 100%;
+    background-color: rgb(13, 184, 184);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:.4rem 0;
+    margin-top: 2.7rem;
+    border-radius: 8px;
+}
+.footer-s2 p{
+    color: white;
+    font-weight: 600;
+}
+.user-destinations-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.user-destinations-container h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5.2rem;
+    margin-top: 5rem;
+}
+.user-destinations-array{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.user-card{
+    min-width: 25rem;
+    min-height: 23rem;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.user-card-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.user-card-image{
+    width: 100%;
+    height: 10rem;
+}
+.user-card-image img{
+    width: 100%;
+    height: 100%;
+}
+.user-card-data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#user-capital{
+    color: rgb(171, 160, 160);
+}
+.user-btn-grp{
+    display: flex;
+    justify-content: space-between;
+}
+.detail-btn{
+    width: 25%;
+    font-size: 1.1rem;
+    padding: .2rem .2rem;
+    background-color: rgb(15, 87, 111);
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.buy-btn{
+    width: 35%;
+    font-size: .8rem;
+    padding: .2rem .2rem;
+    background-color: rgb(15, 87, 111);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin-right: 1rem;
+}
+
+.user-destination-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.user-drop-down{
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+.orderbtn{
+    z-index: 99;
+    position: absolute;
+    right: 10%;
+    top:20%;
+    font-size: 1rem;
+    padding: .2rem .2rem;
+    color: red;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+/* -----------------------------------------------------------
+Responsive code
+----------------------------------------------------------- */
+
+@media screen and (max-width:700px){
+    .footer-s1{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .col-1{
+        display: none !important;
+    }
+}
+@media screen and (max-width:500px){
+
+    .user-search-destination{
+        height: 50rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position:relative;
+    }
+
+    .user-search-section{
+        width:90%;
+        min-height: 15rem;
+        background-color: rgb(207, 203, 203);
+        z-index: 99;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px;
+        top:42%;
+    }
+    .user-input-fields{
+        width: 95%;
+        min-height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    .user-search-section input{
+        height: 2rem;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        padding-left: 1rem;
+    }
+    .user-search-btn{
+        position: absolute;
+        top:85%;
+        background-color: rgb(10, 129, 203);
+        font-size: 1.2rem;
+        padding: .5rem .5rem;
+        border-radius: 20px;
+        border: none;
+        color: aliceblue;
+    }
+    .user-destination-div{
+        display: flex;
+        width: 100%;
+        height: 2rem;
+    }
+
+    .user-destinations-array{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-card{
+        min-width: 90%;
+        height: 23rem;
+        box-shadow: 2px 2px 2px 2px gray;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .user-nav-bar{
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 999;
+        background-color: rgb(245, 238, 238)
+    }
+    .user-logo-section{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2rem;
+    }
+    .user-login-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+    }
+    .user-login-section h1{
+        padding-right: 1rem;
+    }
+    .user-logo-section img{
+        height: 50%;
+        background: transparent;
+    }
+    .logout-button{
+        background-color:rgb(38, 111, 212);
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 2px 2px 2px 2px gray;
+        margin-right: 2rem;
+    }
+   
+}
